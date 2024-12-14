@@ -1,0 +1,15 @@
+To fix the issue, ensure that the parent element has a defined width and height.  Here's a corrected version:
+
+```css
+.parent {
+  width: 500px; /* Explicit width for the parent */
+  height: 300px; /* Explicit height for the parent */
+}
+
+.element {
+  width: calc(100% - 10px);
+  height: calc(50% - 5px);
+}
+```
+
+Alternatively, you can use viewport units (vw, vh) or other appropriate techniques to define the parent's dimensions, depending on your layout requirements.
