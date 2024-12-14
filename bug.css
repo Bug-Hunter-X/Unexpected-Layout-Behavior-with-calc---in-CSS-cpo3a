@@ -1,0 +1,10 @@
+The CSS property `calc()` is used incorrectly in the following code snippet:
+
+```css
+.element {
+  width: calc(100% - 10px);
+  height: calc(50% - 5px);
+}
+```
+
+The issue is that if the parent element does not have a defined width or height, `calc()` will return unexpected results. `calc()` only works if the parent element has a explicitly set width or height.
